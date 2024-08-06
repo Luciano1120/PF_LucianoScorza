@@ -1,3 +1,10 @@
+/* resetetamos  */
+*{margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style-type: none;
+}
+
 
 /* Clase para los logos */
 .logo { width: 80px ;
@@ -13,6 +20,10 @@ height: 60%;}
     
 .fotosProd { width:300px ;
     height: 300px;}
+
+a:visited{
+    color: rgb(50, 22, 175);
+}
 
 header {
     background-color: #f8f9fa; /* Color de fondo del header */
