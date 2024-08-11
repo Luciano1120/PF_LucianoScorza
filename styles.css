@@ -7,8 +7,8 @@
 
 
 /* Clase para los logos */
-.logo { width: 80px ;
-height: 80px;}
+.logo { width: 6% ; /*relativo a su contenedor*/
+height: 100%;} /*el height no me estaba aplicando hasta q active flex al header, ya q es necesario q sus contenedores Padre y Abuelo estén flexibilizados*/
 
 
  /*clase foto portada. Crece de forma relativa en %  */
@@ -26,30 +26,29 @@ a:visited{
 }
 
 header {
-    background-color: #f8f9fa; /* Color de fondo del header */
-    padding: 10px 20px 15px 5px;   /* Esto aplica 10 píxeles de padding en la parte superior, 15 píxeles en el lado derecho, 20 píxeles en la parte inferior y 5 píxeles en el lado izquierdo del elemento. Sentido horario*/
+    background-color: #e9f0f7; /* Color de fondo del header */
+    padding: 1% 0% 1% 1%;   /* Permite q le de un espacion desde el perimetro del header hacia adentro.Esto aplica 1% en la parte superior, 0% en el lado derecho, 1% en la parte inferior y 1% en el lado izquierdo del elemento. Sentido horario*/
+    display: flex;
 }
 
 nav {
     display: flex;
-    align-items: center;
-    justify-content: space-between; /* Distribuye espacio entre logo y navegación */
+    align-items: center;  /*los centra verticalmente */
+    justify-content: space-between; /* Distribuye espacio entre logo y navegación, de no estar me quedan los 2 pegados */
 }
 
 nav ul {
     display: flex;
-    list-style: none;
-    padding: 0;
-    margin-left: auto; /* margen de derecha a izquierda */
+
 }
 
 nav ul li {
-    margin-right: 20px; /* Espacio entre los enlaces */
+    margin-right: 30px; /* Espacio entre los enlaces */
 }
 
 nav ul li a {
-    text-decoration: none;
     color: #333; /* Color del texto del enlace */
+    font-size: 1.5em; /*para q sea relativo al padre*/
 }
 
 
