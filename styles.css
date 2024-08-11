@@ -1,5 +1,5 @@
 /* resetetamos  */
-*{margin: 0;
+*{margin: 0% 0% 0% 0%;
   padding: 0;
   text-decoration: none;
   list-style-type: none;
@@ -72,6 +72,43 @@ h1 {
     margin: 0 auto; /* Centra horizontalmente el enlace dentro de su contenedor- en este caso su contenedor es el nav */
 }
 
+
+/* grid areas -------------------------------------------------------- */
+.grid-container {
+
+    display: grid;
+    
+    /* armo las Q de filas y columnas en base a la grid q le paso al template-areas */
+    grid-template-rows:  repeat( 4,50vh);  /* 4 filas */
+    grid-template-columns: repeat(3,1fr); /* 3 columnas */
+
+
+    /* areas de grid, sirve para pasar despues la distribucion a las clases*/
+    /* como son 4 rows son 4 lienas q defino y como son 3 columnas son 3 palabras por linea */
+    grid-template-areas: 
+    'productos productos productos'
+    'productos productos productos'
+    'productos productos productos'
+    'productos productos productos'    
+    ;
+
+    gap: 10px;  /* espaciado entre celdas*/
+}
+
+
+
+.products {
+    grid-area: productos;
+    border: 1px solid black;
+
+    width: 100%; /* Ancho fijo */
+    height: 100%; /* Altura fija */
+    object-fit: cover; /* Ajusta la imagen para llenar el contenedor */
+
+}
+
+
+/* ---------------------------------------------------------------------- */
 
 
 /* definimos el estilo del */
