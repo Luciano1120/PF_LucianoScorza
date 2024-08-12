@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
 
     <title>Inicio</title>
 </head>
-<body>
+<body >
 
     <header>
         
@@ -31,15 +31,41 @@
             </ul>
         
         </nav>
-    
-
 
     </header>    
 
+
     <h1>Una Nueva forma de brindarte lo q necesitas!</h1>
-
-<img class="fotoPortada"  src="multimedia/Portada.jpg" alt="foto de portada">
-
+    <!-- carousel de bootstrap -->
+    <section class="body">
+        
+        <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner">
+                 <div class=" carousel-item active">
+                    <img src="multimedia/Productos/Productos1.jpg" class="imagen-carousel" alt="electrodomesticos1">
+                 </div>
+          
+                <div class="posicion-imagen carousel-item">
+                    <img src="multimedia/Productos/Productos2.jpg" class="imagen-carousel" alt="electrodomesticos2">
+                </div>
+          
+                <div class="posicion-imagen carousel-item">
+                    <img src="multimedia/Productos/Productos3.jpg" class="imagen-carousel" alt="electrodomesticos3">
+                </div>
+        
+            </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+        </div>
+    </section>
+    
+    
 <!-- usamos footer para identificar la etiqueta de pie de pagina -->
 <footer>
     <section id="contacto">
@@ -60,7 +86,7 @@
 
 
 
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
 </body>
 </html>

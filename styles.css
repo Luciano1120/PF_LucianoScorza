@@ -25,6 +25,15 @@ a:visited{
     color: rgb(50, 22, 175);
 }
 
+.body{
+    background-image: url(multimedia/Portada.jpg);
+    background-size : cover;
+    background-repeat: no-repeat;
+    background-position: center; /* Centra la imagen de fondo */
+    
+
+}
+
 header {
     background-color: #e9f0f7; /* Color de fondo del header */
     padding: 1% 0% 1% 1%;   /* Permite q le de un espacion desde el perimetro del header hacia adentro.Esto aplica 1% en la parte superior, 0% en el lado derecho, 1% en la parte inferior y 1% en el lado izquierdo del elemento. Sentido horario*/
@@ -37,9 +46,11 @@ nav {
     justify-content: space-between; /* Distribuye espacio entre logo y navegación, de no estar me quedan los 2 pegados */
 }
 
+
+
 nav ul {
     display: flex;
-
+    
 }
 
 nav ul li {
@@ -140,3 +151,12 @@ footer a:hover {
     text-decoration: underline; /* Subraya el enlace al pasar el ratón */
 }
 
+
+
+/* imagenes carousel */
+
+.imagen-carousel{
+
+    width: 50%;
+    height: 50vh;
+}
