@@ -1,3 +1,8 @@
+/* importo de google font- roboto */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+
 /* resetetamos  */
 *{margin: 0% 0% 0% 0%;
   padding: 0;
@@ -7,40 +12,36 @@
 
 
 /* Clase para los logos */
-.logo { width: 6% ; /*relativo a su contenedor*/
+.logo { width: 10% ; /*relativo a su contenedor*/
 height: 100%;} /*el height no me estaba aplicando hasta q active flex al header, ya q es necesario q sus contenedores Padre y Abuelo estén flexibilizados*/
 
-
- /*clase foto portada. Crece de forma relativa en %  */
-.fotoPortada { width: 100% ;
-height: 60%;}
-
-.fotoMediana { width:1800px ;
-    height: 500px;}
-    
-.fotosProd { width:300px ;
-    height: 300px;}
-
+/* colo para enlaces ya clickeados */
 a:visited{
     color: rgb(50, 22, 175);
 }
 
-.body{
-    background-image: url(multimedia/Portada.jpg);
-    background-size : cover;
-    background-repeat: no-repeat;
-    background-position: center; /* Centra la imagen de fondo */
-    
 
+.header__container--index {
+    background-color: #e9f0f7; /* Color de fondo del header */
+    padding: 1% 0% 1% 1%;   /* Permite q le de un espacion desde el perimetro del header hacia adentro.Esto aplica 1% en la parte superior, 0% en el lado derecho, 1% en la parte inferior y 1% en el lado izquierdo del elemento. Sentido horario*/
+    display: flex;
+    
 }
 
-header {
+.header__items--index {
+    display: flex;
+    align-items: center;  /*los centra verticalmente */
+    justify-content: space-between; /* Distribuye espacio entre logo y navegación, de no estar me quedan los 2 pegados */
+}
+
+
+.header__container--pages {
     background-color: #e9f0f7; /* Color de fondo del header */
     padding: 1% 0% 1% 1%;   /* Permite q le de un espacion desde el perimetro del header hacia adentro.Esto aplica 1% en la parte superior, 0% en el lado derecho, 1% en la parte inferior y 1% en el lado izquierdo del elemento. Sentido horario*/
     display: flex;
 }
 
-nav {
+.header__items--pages {
     display: flex;
     align-items: center;  /*los centra verticalmente */
     justify-content: space-between; /* Distribuye espacio entre logo y navegación, de no estar me quedan los 2 pegados */
@@ -50,44 +51,109 @@ nav {
 
 nav ul {
     display: flex;
-    
+
 }
+
+@media (max-width: 650px) {
+    nav ul {
+        flex-direction: column;  /* Cambia la dirección de los elementos a columna */
+        align-items: center;     /* Centra los elementos */
+    }
+    .logo { width: 20% ; /*relativo a su contenedor*/
+        height: 100%;} 
+
+}
+
+
 
 nav ul li {
     margin-right: 30px; /* Espacio entre los enlaces */
+    
 }
 
+
+
+
+
+/* aplica a los navbar con listas desordendas con elementos con enlaces */
 nav ul li a {
     color: #333; /* Color del texto del enlace */
-    font-size: 1.5em; /*para q sea relativo al padre*/
+    font-size: 1.2rem; /*para q sea relativo al html*/
+}
+
+
+@media (max-width: 900px ) {
+    nav ul li a {
+
+        font-size: 0.8rem; /*para q sea relativo al */
+    }
+
+
 }
 
 
 
-h1 {
+
+h1,h2,h3,h4 {
     text-align: center;
+    font-family: "Roboto" ,  sans-serif   ; /* uso la fuente de google font para titulos*/
 }
 
-/* Parrafos Centrados */
-.parrafosCentrados{
-    text-align: center;
+p,
+a { font-family: "Roboto" ,  sans-serif   ; /* uso la fuente de google font para parrafos y enlaces*/
+    font-weight: 500;
+  font-style: normal; }
+
+
+/* carousel */
+
+
+
+/* muy util! como adapto la clase de bootstrap para el tamaño del carousel .------------*/
+.carousel-inner, 
+.carousel-item { 
+    width: 100%;
+    height: 500px;
+    background-color:#a5a3a3;
+}
+
+/* adpato el tamaño de las imagenes para q encuadren en el carrusel  */
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; 
 }
 
 
-/* para darle estilo al Link Home desde otro HTML q no sea el Index */
-.home-link {
-    text-decoration: none;
-    color: #333; /* Color del texto del enlace */
-    font-size: 18px; /* Tamaño de la fuente del enlace */
-    margin: 0 auto; /* Centra horizontalmente el enlace dentro de su contenedor- en este caso su contenedor es el nav */
+
+
+
+/* ---------------------------------------------------------------- */
+
+@media (max-width: 760px) {
+    .carousel-inner, 
+    .carousel-item { 
+        width: 100%;
+        height: 500px;
+    }
+    
+    /* adpato el tamaño de las imagenes para q encuadren en el carrusel  */
+    .carousel-item img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+    
+
 }
+
 
 
 /* grid areas -------------------------------------------------------- */
 .grid-container {
 
     display: grid;
-    
+
     /* armo las Q de filas y columnas en base a la grid q le paso al template-areas */
     grid-template-rows:  repeat( 4,50vh);  /* 4 filas */
     grid-template-columns: repeat(3,1fr); /* 3 columnas */
@@ -95,11 +161,11 @@ h1 {
 
     /* areas de grid, sirve para pasar despues la distribucion a las clases*/
     /* como son 4 rows son 4 lienas q defino y como son 3 columnas son 3 palabras por linea */
-    grid-template-areas: 
+    grid-template-areas:
     'productos productos productos'
     'productos productos productos'
     'productos productos productos'
-    'productos productos productos'    
+    'productos productos productos'
     ;
 
     gap: 10px;  /* espaciado entre celdas*/
@@ -113,9 +179,71 @@ h1 {
 
     width: 100%; /* Ancho fijo */
     height: 100%; /* Altura fija */
-    object-fit: cover; /* Ajusta la imagen para llenar el contenedor */
+    object-fit: contain; /* Ajusta la imagen para q entre completa en su contenedor */
 
 }
+
+
+@media (max-width : 1000px){
+
+    .grid-container {
+
+       
+    
+        /* armo las Q de filas y columnas en base a la grid q le paso al template-areas */
+        grid-template-rows:  repeat( 6,50vh);  /* 4 filas */
+        grid-template-columns: repeat(2,1fr); /* 3 columnas */
+    
+    
+        /* areas de grid, sirve para pasar despues la distribucion a las clases*/
+        /* como son 4 rows son 4 lienas q defino y como son 3 columnas son 3 palabras por linea */
+        grid-template-areas:
+        'productos productos '
+        'productos productos '
+        'productos productos '
+        'productos productos '
+        'productos productos '
+        'productos productos '
+        
+
+        ;
+    
+
+    }
+    
+}
+
+@media (max-width : 768px){
+
+    .grid-container {
+
+    
+        /* armo las Q de filas y columnas en base a la grid q le paso al template-areas */
+        grid-template-rows:  repeat( 12,50vh);  /* 4 filas */
+        grid-template-columns: repeat(1,1fr); /* 3 columnas */
+    
+    
+        /* areas de grid, sirve para pasar despues la distribucion a las clases*/
+        /* como son 4 rows son 4 lienas q defino y como son 3 columnas son 3 palabras por linea */
+        grid-template-areas:
+        'productos'
+        'productos'
+        'productos'
+        'productos'
+        'productos'
+        'productos'
+        'productos'
+        'productos'
+        'productos'
+        'productos'
+        'productos'
+        'productos'
+
+        ;
+    }
+    
+    }
+
 
 
 /* ---------------------------------------------------------------------- */
@@ -153,10 +281,3 @@ footer a:hover {
 
 
 
-/* imagenes carousel */
-
-.imagen-carousel{
-
-    width: 50%;
-    height: 50vh;
-}
