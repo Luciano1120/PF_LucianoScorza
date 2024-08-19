@@ -79,6 +79,7 @@ nav ul li {
 nav ul li a {
     color: #333; /* Color del texto del enlace */
     font-size: 1.2rem; /*para q sea relativo al html*/
+    transition: 0.9s;  /* permite hacer q el hover se aplique más suave*/
 
     &:hover {
         color: darkgoldenrod ;
@@ -182,9 +183,16 @@ a { font-family: "Roboto" ,  sans-serif   ; /* uso la fuente de google font para
     grid-area: productos;
     border: 1px solid black;
 
-    width: 100%; /* Ancho fijo */
-    height: 100%; /* Altura fija */
+    width: 80%; /* Ancho 80% de su contender */
+    height: 80%; /* Altura fija */
     object-fit: contain; /* Ajusta la imagen para q entre completa en su contenedor */
+
+    &:hover{
+
+        width: 100%; /* Ancho fijo */
+        height: 100%; /* Altura fija */
+
+    }
 
 }
 
