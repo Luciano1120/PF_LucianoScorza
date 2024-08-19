@@ -1,0 +1,11 @@
+{
+  "name": "preentrega3lucianoscorza",
+  "version": "1.0.0",
+  "description": "Los 2 HTMLs para la Entrega son el index..html y el queOfrecemos.html",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
