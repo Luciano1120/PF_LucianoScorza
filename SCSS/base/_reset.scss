@@ -1,0 +1,91 @@
+/* importo de google font- roboto */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+
+/* resetetamos  */
+*{margin: 0% 0% 0% 0%;
+  padding: 0;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+
+h1,h2,h3,h4 {
+    text-align: center;
+    font-family: "Roboto" ,  sans-serif   ; /* uso la fuente de google font para titulos*/
+}
+
+p,
+a { font-family: "Roboto" ,  sans-serif   ; /* uso la fuente de google font para parrafos y enlaces*/
+    font-weight: 500;
+  font-style: normal; }
+
+
+ /* color para enlaces ya clickeados- pseudo clase */
+a:visited{
+  color: rgb(50, 22, 175);
+}
+
+
+
+nav ul li {
+  margin-right: 30px; /* Espacio entre los enlaces */
+  
+}
+
+
+
+
+
+
+nav ul {
+  display: flex;
+
+}
+
+/* aplica a los navbar con listas desordendas con elementos con enlaces */
+nav ul li a {
+  color: #333; /* Color del texto del enlace */
+  font-size: 1.2rem; /*para q sea relativo al html*/
+  transition: 0.9s;  /* permite hacer q el hover se aplique más suave*/
+
+  &:hover {
+      color: darkgoldenrod ;
+  }
+
+}
+
+
+
+/* definimos el estilo del footer*/
+footer {
+  background-color: #f1f1f1; /* Color de fondo del pie de página */
+  padding: 20px;
+  text-align: center;
+}
+
+footer h2 {
+  margin-top: 0;
+}
+
+footer ul {
+  list-style: none; /* Quita los puntos de la lista */
+  padding: 0;
+}
+
+footer ul li {
+  margin-bottom: 10px; /* Espacio entre los elementos de la lista */
+}
+
+/* dentro del footer y en las etiquetas a le doy estos estilo. En este caso le pega al correo */
+footer a {
+  color: #007bff; /* Color de los enlaces */
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline; /* Subraya el enlace al pasar el ratón */
+}
+
+

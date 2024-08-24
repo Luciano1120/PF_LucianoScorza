@@ -1,0 +1,34 @@
+/* Clase para los logos */
+.logo { width: 10% ; /*relativo a su contenedor*/
+    height: 100%;} /*el height no me estaba aplicando hasta q active flex al header, ya q es necesario q sus contenedores Padre y Abuelo estén flexibilizados*/
+    
+    
+    
+    .header__container--index {
+        background-color: #e9f0f7; /* Color de fondo del header */
+        padding: 1% 0% 1% 1%;   /* Permite q le de un espacion desde el perimetro del header hacia adentro.Esto aplica 1% en la parte superior, 0% en el lado derecho, 1% en la parte inferior y 1% en el lado izquierdo del elemento. Sentido horario*/
+        display: flex;
+        
+    }
+    
+    .header__items--index {
+        display: flex;
+        align-items: center;  /*los centra verticalmente */
+        justify-content: space-between; /* Distribuye espacio entre logo y navegación, de no estar me quedan los 2 pegados */
+    }
+    
+    
+    .header__container--pages {
+        background-color: #e9f0f7; /* Color de fondo del header */
+        padding: 1% 0% 1% 1%;   /* Permite q le de un espacion desde el perimetro del header hacia adentro.Esto aplica 1% en la parte superior, 0% en el lado derecho, 1% en la parte inferior y 1% en el lado izquierdo del elemento. Sentido horario*/
+        display: flex;
+    }
+    
+    .header__items--pages {
+        display: flex;
+        align-items: center;  /*los centra verticalmente */
+        justify-content: space-between; /* Distribuye espacio entre logo y navegación, de no estar me quedan los 2 pegados */
+    }
+    
+    
+    
