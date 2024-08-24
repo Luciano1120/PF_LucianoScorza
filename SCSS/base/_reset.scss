@@ -13,18 +13,18 @@
 
 h1,h2,h3,h4 {
     text-align: center;
-    font-family: "Roboto" ,  sans-serif   ; /* uso la fuente de google font para titulos*/
+    font-family: $font-main ,  sans-serif   ; /* uso la fuente de google font para titulos*/
 }
 
 p,
-a { font-family: "Roboto" ,  sans-serif   ; /* uso la fuente de google font para parrafos y enlaces*/
+a { font-family: $font-main ,  sans-serif   ; /* uso la fuente de google font para parrafos y enlaces*/
     font-weight: 500;
   font-style: normal; }
 
 
  /* color para enlaces ya clickeados- pseudo clase */
 a:visited{
-  color: rgb(50, 22, 175);
+  color: $color-link-visited;
 }
 
 
@@ -46,12 +46,12 @@ nav ul {
 
 /* aplica a los navbar con listas desordendas con elementos con enlaces */
 nav ul li a {
-  color: #333; /* Color del texto del enlace */
+  color: $color-link-text; /* Color del texto del enlace */
   font-size: 1.2rem; /*para q sea relativo al html*/
   transition: 0.9s;  /* permite hacer q el hover se aplique más suave*/
 
   &:hover {
-      color: darkgoldenrod ;
+      color: $color-hover ;
   }
 
 }

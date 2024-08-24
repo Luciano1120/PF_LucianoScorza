@@ -1,6 +1,8 @@
 
 //base
+@import 'base/vars'; //las variables siempre al principio
 @import 'base/reset';
+
 
 //components
 @import 'components/navbar';
@@ -9,8 +11,9 @@
 @import 'components/footer';
 
 //layout
-@import 'layout/mediasquery';
 @import 'layout/index';
+@import 'layout/mediasquery';
+
 
 
 
