@@ -10,10 +10,17 @@
   list-style-type: none;
 }
 
+h2,h3,h4{
+  text-align: center;
+  font-family: $font-main ,  sans-serif   ; /* uso la fuente de google font para titulos*/
 
-h1,h2,h3,h4 {
-    text-align: center;
-    font-family: $font-main ,  sans-serif   ; /* uso la fuente de google font para titulos*/
+}
+
+h1 {
+    @extend h2;
+    padding: 3% 10%;
+    font-size: 200%;
+    background-color: $color-h1;
 }
 
 p,
@@ -28,21 +35,18 @@ a:visited{
 }
 
 
+nav ul {
+  display: flex;
+
+}
+
+
 
 nav ul li {
   margin-right: 30px; /* Espacio entre los enlaces */
   
 }
 
-
-
-
-
-
-nav ul {
-  display: flex;
-
-}
 
 /* aplica a los navbar con listas desordendas con elementos con enlaces */
 nav ul li a {
@@ -60,7 +64,7 @@ nav ul li a {
 
 /* definimos el estilo del footer*/
 footer {
-  background-color: #f1f1f1; /* Color de fondo del pie de página */
+  background-color: $color-white; /* Color de fondo del pie de página */
   padding: 20px;
   text-align: center;
 }

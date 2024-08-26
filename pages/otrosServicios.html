@@ -18,8 +18,9 @@
 <body>
     
 
-    <header >
-        <nav>
+    <header class="header__container--pages">
+        
+        <nav class ="header__items--pages">
               <!--le asigno la clase logo  -->
             <img class="logo" src="../multimedia/generales/logo.jpg" alt="Logo de mi Sitio Web">
             <a class="home-link" href="../index.html">Home</a>  <!-- vuelve a la home -->
@@ -31,27 +32,32 @@
 
     <h1>Otros Servicios que Ofrecemos</h1>
 
-    <p class="parrafosCentrados">Te ordenamos tu empresa</p>
-    <p class="parrafosCentrados" >Servicios de Contabilidad y Programacion</p>
+    <h2 >Te ordenamos tu empresa</h2>
+    <br>
+    <br>
+
+    <h3 >Servicios de Contabilidad y Programacion</h3>
     
-    <ul>
+    <div class="flex">
+    <section class="flex">
 
-    <li><img class="fotosProd" src="../multimedia/OtrosServicios/Contabilidad1.jpeg" alt="Contabilidad1"></li>
-    <li><img class="fotosProd" src="../multimedia/OtrosServicios/Programacion1.jpeg" alt="Programacion1"></li>
+        <img class="fotosProd" src="../multimedia/OtrosServicios/Contabilidad1.jpeg" alt="Contabilidad1">
+        <img class="fotosProd" src="../multimedia/OtrosServicios/Programacion1.jpeg" alt="Programacion1">
+
+    </section>
     
-
-    </ul>
-
 
     <section>
-        <p class="parrafosCentrados"> Mira algo de lo q puede serte útil </p>
+        
         
         <!-- viedeo de Youtube -->
         <iframe width="560" height="315" src="https://www.youtube.com/embed/DX3wnRgRyeE?si=JUgj1OU5w0szcfvp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
+        <p class="parrafosCentrados"> Mira algo de lo q puede serte útil </p>
 
     </section>
 
+</div>
 
     <footer>
         <section id="contacto">

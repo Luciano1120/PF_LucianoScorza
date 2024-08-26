@@ -1,8 +1,28 @@
-$color-white:#e9f0f7;
+$color-white:#f5f7fa;
 $color-link-visited:rgb(50, 22, 175);
 $color-link-text: #333;
-$color-carousel:#a5a3a3;
+$color-h1: rgb(247, 223, 242);
+
+//mapeo
+$estacion: (
+    invierno:#a5a3a3,
+    verano:#d2f1f5
+);
+
+$temporada: invierno; // seteo la temporada verano o invierno segun sea y la modifico en base a la estacion q sea
+
+
+$oferta : si ; //si hay ofertas va si, si no no
+$color-oferta: rgb(224, 170, 170);
+
+$color-carousel_invierno:#a5a3a3;
+$color-carousel_verano:#d2f1f5;
 $color-hover: darkgoldenrod;
 
 
-$font-main: "Roboto"
+$font-main: "Roboto";
+
+
+
+
+

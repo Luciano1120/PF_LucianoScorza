@@ -1,0 +1,14 @@
+
+.h2-index{
+    @if $oferta== no {
+    display:none;}
+    @else{
+    background-color: $color-oferta;
+}
+}
+
+
+.flex {
+    @include  displayFlex(
+        
+    )}

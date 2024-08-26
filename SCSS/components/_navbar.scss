@@ -19,15 +19,13 @@
     
     
     .header__container--pages {
-        background-color: $color-white; /* Color de fondo del header */
-        padding: 1% 0% 1% 1%;   /* Permite q le de un espacion desde el perimetro del header hacia adentro.Esto aplica 1% en la parte superior, 0% en el lado derecho, 1% en la parte inferior y 1% en el lado izquierdo del elemento. Sentido horario*/
-        display: flex;
+        @extend .header__container--index; // replico la clase index, para luego pasarle algunas propiedades más
+        
     }
     
     .header__items--pages {
-        display: flex;
-        align-items: center;  /*los centra verticalmente */
-        justify-content: space-between; /* Distribuye espacio entre logo y navegación, de no estar me quedan los 2 pegados */
+        @extend .header__items--index;
+        
     }
     
     

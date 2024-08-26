@@ -1,6 +1,26 @@
 @charset "UTF-8";
-/* importo de google font- roboto */
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+.p-1 {
+  padding: 10px;
+}
+
+.p-2 {
+  padding: 20px;
+}
+
+.p-3 {
+  padding: 30px;
+}
+
+.p-4 {
+  padding: 40px;
+}
+
+.p-5 {
+  padding: 50px;
+}
+
+/* importo de google font- roboto */
 /* resetetamos  */
 * {
   margin: 0% 0% 0% 0%;
@@ -9,9 +29,15 @@
   list-style-type: none;
 }
 
-h1, h2, h3, h4 {
+h2, h1, h3, h4 {
   text-align: center;
   font-family: "Roboto", sans-serif; /* uso la fuente de google font para titulos*/
+}
+
+h1 {
+  padding: 3% 10%;
+  font-size: 200%;
+  background-color: rgb(247, 223, 242);
 }
 
 p,
@@ -26,12 +52,12 @@ a:visited {
   color: rgb(50, 22, 175);
 }
 
-nav ul li {
-  margin-right: 30px; /* Espacio entre los enlaces */
-}
-
 nav ul {
   display: flex;
+}
+
+nav ul li {
+  margin-right: 30px; /* Espacio entre los enlaces */
 }
 
 /* aplica a los navbar con listas desordendas con elementos con enlaces */
@@ -46,12 +72,12 @@ nav ul li a:hover {
 
 /* definimos el estilo del footer*/
 footer {
-  background-color: #f1f1f1; /* Color de fondo del pie de página */
+  background-color: #f5f7fa; /* Color de fondo del pie de página */
   padding: 20px;
   text-align: center;
 }
 
-footer h2 {
+footer h2, footer h1 {
   margin-top: 0;
 }
 
@@ -79,25 +105,13 @@ footer a:hover {
   width: 10%; /*relativo a su contenedor*/
   height: 100%;
 } /*el height no me estaba aplicando hasta q active flex al header, ya q es necesario q sus contenedores Padre y Abuelo estén flexibilizados*/
-.header__container--index {
-  background-color: #e9f0f7; /* Color de fondo del header */
+.header__container--index, .header__container--pages {
+  background-color: #f5f7fa; /* Color de fondo del header */
   padding: 1% 0% 1% 1%; /* Permite q le de un espacion desde el perimetro del header hacia adentro.Esto aplica 1% en la parte superior, 0% en el lado derecho, 1% en la parte inferior y 1% en el lado izquierdo del elemento. Sentido horario*/
   display: flex;
 }
 
-.header__items--index {
-  display: flex;
-  align-items: center; /*los centra verticalmente */
-  justify-content: space-between; /* Distribuye espacio entre logo y navegación, de no estar me quedan los 2 pegados */
-}
-
-.header__container--pages {
-  background-color: #e9f0f7; /* Color de fondo del header */
-  padding: 1% 0% 1% 1%; /* Permite q le de un espacion desde el perimetro del header hacia adentro.Esto aplica 1% en la parte superior, 0% en el lado derecho, 1% en la parte inferior y 1% en el lado izquierdo del elemento. Sentido horario*/
-  display: flex;
-}
-
-.header__items--pages {
+.header__items--index, .header__items--pages {
   display: flex;
   align-items: center; /*los centra verticalmente */
   justify-content: space-between; /* Distribuye espacio entre logo y navegación, de no estar me quedan los 2 pegados */
@@ -132,13 +146,41 @@ footer a:hover {
 .products {
   grid-area: productos;
   border: 1px solid black;
-  width: 80%; /* Ancho 80% de su contende */
-  height: 80%; /* Altura fija */
+  width: 80%; /* Ancho 80% de su contenedor */
+  height: 80%; /* Alto de su contenedor */
   object-fit: contain; /* Ajusta la imagen para q entre completa en su contenedor */
 }
 .products:hover {
   width: 100%; /* Ancho fijo */
   height: 100%; /* Altura fija */
+}
+.products:hover:hover + p {
+  display: none;
+}
+
+.h2-index {
+  background-color: rgb(224, 170, 170);
+}
+
+.flex, .flex_Colum {
+  display: flex;
+  justify-content: space-around;
+}
+
+.body__quienesSomos {
+  display: flex;
+}
+
+.parrafo__quienesSomos {
+  padding: 2% 2%;
+}
+
+.h2__quienesSomos {
+  padding: 4% 2%;
+}
+
+.flex_Colum {
+  direction: column;
 }
 
 /* -----Carousel--------------------------------------------------- */
@@ -173,8 +215,8 @@ footer a:hover {
 @media (max-width: 1000px) {
   .grid-container {
     /* armo las Q de filas y columnas en base a la grid q le paso al template-areas */
-    grid-template-rows: repeat(6, 50vh); /* 4 filas */
-    grid-template-columns: repeat(2, 1fr); /* 3 columnas */
+    grid-template-rows: repeat(6, 50vh); /* 6 filas */
+    grid-template-columns: repeat(2, 1fr); /* 2 columnas */
     /* areas de grid, sirve para pasar despues la distribucion a las clases*/
     /* como son 4 rows son 4 lienas q defino y como son 3 columnas son 3 palabras por linea */
     grid-template-areas: "productos productos " "productos productos " "productos productos " "productos productos " "productos productos " "productos productos ";
@@ -183,8 +225,8 @@ footer a:hover {
 @media (max-width: 768px) {
   .grid-container {
     /* armo las Q de filas y columnas en base a la grid q le paso al template-areas */
-    grid-template-rows: repeat(12, 50vh); /* 4 filas */
-    grid-template-columns: repeat(1, 1fr); /* 3 columnas */
+    grid-template-rows: repeat(12, 50vh); /* 12  filas */
+    grid-template-columns: repeat(1, 1fr); /* 1 columnas */
     /* areas de grid, sirve para pasar despues la distribucion a las clases*/
     /* como son 4 rows son 4 lienas q defino y como son 3 columnas son 3 palabras por linea */
     grid-template-areas: "productos" "productos" "productos" "productos" "productos" "productos" "productos" "productos" "productos" "productos" "productos" "productos";

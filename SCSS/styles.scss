@@ -1,6 +1,7 @@
 
 //base
 @import 'base/vars'; //las variables siempre al principio
+@import 'base/utilities';
 @import 'base/reset';
 
 
@@ -12,6 +13,7 @@
 
 //layout
 @import 'layout/index';
+@import 'layout/quienesSomos';
 @import 'layout/mediasquery';
 
 

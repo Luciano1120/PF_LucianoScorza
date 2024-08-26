@@ -47,8 +47,8 @@
        
     
         /* armo las Q de filas y columnas en base a la grid q le paso al template-areas */
-        grid-template-rows:  repeat( 6,50vh);  /* 4 filas */
-        grid-template-columns: repeat(2,1fr); /* 3 columnas */
+        grid-template-rows:  repeat( 6,50vh);  /* 6 filas */
+        grid-template-columns: repeat(2,1fr); /* 2 columnas */
     
     
         /* areas de grid, sirve para pasar despues la distribucion a las clases*/
@@ -75,8 +75,8 @@
 
     
         /* armo las Q de filas y columnas en base a la grid q le paso al template-areas */
-        grid-template-rows:  repeat( 12,50vh);  /* 4 filas */
-        grid-template-columns: repeat(1,1fr); /* 3 columnas */
+        grid-template-rows:  repeat( 12,50vh);  /* 12  filas */
+        grid-template-columns: repeat(1,1fr); /* 1 columnas */
     
     
         /* areas de grid, sirve para pasar despues la distribucion a las clases*/

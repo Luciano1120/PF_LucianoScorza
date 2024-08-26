@@ -1,0 +1,22 @@
+// para incluir bucles para armar clases
+
+@for $var from 1 to 6 {
+       .p-#{$var} {
+         padding: $var * 10px;
+      }
+     }
+     
+
+// mixin con parametros
+@mixin imagenes($w, $h, $obj) {
+  width: $w;
+  height: $h;
+  object-fit: $obj;
+}     
+
+@mixin displayFlex{
+  display: flex;
+  justify-content: space-around;
+  
+
+}

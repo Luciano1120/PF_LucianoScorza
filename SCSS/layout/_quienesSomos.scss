@@ -1,0 +1,22 @@
+.body__quienesSomos{
+
+    display: flex;
+
+
+}
+
+.parrafo__quienesSomos{
+        padding: 2% 2%;
+}
+
+.h2__quienesSomos{
+    padding: 4% 2%;
+
+}
+
+.flex_Colum {
+    
+    @extend .flex;
+    direction: column;
+
+}

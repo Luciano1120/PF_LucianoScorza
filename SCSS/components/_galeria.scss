@@ -26,14 +26,16 @@
     grid-area: productos;
     border: 1px solid black;
 
-    width: 80%; /* Ancho 80% de su contende */
-    height: 80%; /* Altura fija */
+    width: 80%; /* Ancho 80% de su contenedor */
+    height: 80%; /* Alto de su contenedor */
     object-fit: contain; /* Ajusta la imagen para q entre completa en su contenedor */
 
     &:hover{
 
         width: 100%; /* Ancho fijo */
         height: 100%; /* Altura fija */
+    &:hover + p   //le agrego al hover q sume al parrafo para q lo oculte
+         { display: none};
 
     }
 
