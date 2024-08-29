@@ -24,7 +24,7 @@
 /* resetetamos  */
 * {
   margin: 0% 0% 0% 0%;
-  padding: 0;
+  padding: 0.2%;
   text-decoration: none;
   list-style-type: none;
 }
@@ -149,6 +149,7 @@ footer a:hover {
   width: 80%; /* Ancho 80% de su contenedor */
   height: 80%; /* Alto de su contenedor */
   object-fit: contain; /* Ajusta la imagen para q entre completa en su contenedor */
+  transition: 0.5s;
 }
 .products:hover {
   width: 100%; /* Ancho fijo */
@@ -171,16 +172,21 @@ footer a:hover {
   display: flex;
 }
 
-.parrafo__quienesSomos {
-  padding: 2% 2%;
-}
-
 .h2__quienesSomos {
   padding: 4% 2%;
 }
 
 .flex_Colum {
   direction: column;
+}
+
+.iframe_contactos {
+  width: 100%;
+  height: 45vh;
+}
+
+.parrafo__contactos {
+  padding: 2% 2%;
 }
 
 /* -----Carousel--------------------------------------------------- */

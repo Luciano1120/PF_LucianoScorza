@@ -29,6 +29,7 @@
     width: 80%; /* Ancho 80% de su contenedor */
     height: 80%; /* Alto de su contenedor */
     object-fit: contain; /* Ajusta la imagen para q entre completa en su contenedor */
+    transition: 0.5s;
 
     &:hover{
 
