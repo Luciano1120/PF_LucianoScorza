@@ -32,7 +32,7 @@
 @media (max-width: 900px ) {
     nav ul li a {
 
-        font-size: 0.8rem; /*para q sea relativo al */
+        font-size: 0.7rem; /*para q sea relativo al */
     }
 
 
@@ -103,3 +103,38 @@
 
 
 /* ---------------------------------------------------------------------- */
+
+//para ocultar el mapa de contactos
+@media (max-width : 900px){
+    .iframe_contactos{
+
+        display: none;
+}}
+
+
+//oculta logo
+@media (max-width : 1000px){
+    .logo{
+
+        display: none;
+}}
+
+@media (max-width : 1200px){
+    .fotoMediana{
+
+    display: none;
+}}
+
+@media (max-width : 1200px){
+    .video{
+
+    display: none;
+}}
+
+@media (max-width : 1200px){
+    .parrafosCentrados{
+
+    display: none;
+}}
+
+

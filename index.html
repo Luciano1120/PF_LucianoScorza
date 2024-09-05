@@ -42,31 +42,43 @@
 <body >
 
     <header class="header__container--index">
+      <div class="header__items--index">
         
-        <nav class ="header__items--index">
-            <!--le asigno la clase logo  -->
-            <img class="logo" src="multimedia/generales/logo.jpg" alt="Logo de mi Sitio Web">
-
-            <ul>               
-
-               
+        <img class="logo" src="../multimedia/generales/logo.jpg" alt="Logo de mi Sitio Web"> 
+        <nav class="navbar navbar-expand-lg">
+            
+            <div class="container-fluid">
+             
                 
-                <!--se abre en otra solapa  -->
-                <li><a href="pages/queOfrecemos.html" target="_blank">Que Ofrecemos</a></li> 
-
-                <li><a href="pages/otrosServicios.html">Otros Servicios</a></li>
-
-                <li><a href="pages/quienesSomos.html">Quienes Somos</a></li> <!--otra forma de plasmar la ruta  q ayuda mas a al autollenado-->
-
-                <li> <a href="pages/contactos.html">Contactanos</a></li>
-            
-            
-            </ul>
-        
-        </nav>
-
-    </header>    
-
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+                      </li>
+                  
+                    <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="pages/queOfrecemos.html">Que Ofrecemos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="pages/quienesSomos.html">Quienes Somos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="pages/otrosServicios.html">Otros Servicios</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="pages/contactos.html">Contactos</a>
+                  </li>
+                  
+                </ul>
+                
+              </div>
+            </div>
+          </nav>
+        </div>
+    </header>
 
    
   

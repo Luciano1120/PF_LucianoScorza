@@ -1,0 +1,13 @@
+.fotosProd {
+
+  width: 100%; /* La imagen ocupará el 100% del ancho de su contenedor */
+  height: auto; /* La altura se ajustará automáticamente para mantener la proporción */
+  max-width: 300px; /* Tamaño máximo para no agrandar más allá de un límite */
+  object-fit: contain;
+}
+
+.flexColumn{
+@extend .flex ;
+flex-direction: column ;
+
+}
