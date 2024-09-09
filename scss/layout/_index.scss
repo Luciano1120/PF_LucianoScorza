@@ -1,3 +1,7 @@
+.body_index {
+    padding-top: 20vh; /* Ajusta este valor según la altura de tu navbar para q no me rompa con el fixed top*/
+  }
+
 
 .h2-index{
     @if $oferta== no {

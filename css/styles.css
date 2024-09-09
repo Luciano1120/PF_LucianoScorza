@@ -159,6 +159,10 @@ footer a:hover {
   display: none;
 }
 
+.body_index {
+  padding-top: 20vh; /* Ajusta este valor según la altura de tu navbar para q no me rompa con el fixed top*/
+}
+
 .h2-index {
   background-color: rgb(224, 170, 170);
 }
@@ -279,6 +283,21 @@ footer a:hover {
 @media (max-width: 1200px) {
   .parrafosCentrados {
     display: none;
+  }
+}
+@media (max-width: 1200px) {
+  .body_index {
+    padding-top: 20vh; /* Ajusta este valor según la altura de tu navbar para q no me rompa con el fixed top*/
+  }
+}
+@media (max-width: 1000px) {
+  .body_index {
+    padding-top: 12vh; /* Ajusta este valor según la altura de tu navbar para q no me rompa con el fixed top*/
+  }
+}
+@media (max-width: 650px) {
+  .body_index {
+    padding-top: 10vh; /* Ajusta este valor según la altura de tu navbar para q no me rompa con el fixed top*/
   }
 }
 
